@@ -53,6 +53,39 @@ public:
             return dp[n];
     }
     
+    int spaceOpSolve(int n){
+        
+        //step 2: ovserve base case in above solution
+     int   prev2=0;
+        
+       
+        
+        
+       int  prev1=1;
+        
+         if(n==0){
+            return prev2;
+        }
+        
+         if(n==1){
+            return prev1;
+        }
+        
+        int curr;
+        //step 3:
+        
+        for(int i =2;i<=n;i++)
+            {
+                curr=prev1+ prev2;
+            //shifting
+            
+            prev2= prev1;
+            prev1= curr;
+            
+            } 
+            return curr;
+    }
+    
     
     int fib(int n) {
         
@@ -65,6 +98,10 @@ public:
         // int ans= topDownSolve(n, dp);
         // return ans;
         
-        return bttomUpSolve( n);
+        // return bttomUpSolve( n);
+        
+        return spaceOpSolve(n);
+        
+        
     }
 };
