@@ -53,6 +53,7 @@ Node *bulidTreeFromPreOrderInOrder(int inorder[], int preorder[], int size, int 
     return root;
 }
 
+
 void levelOrderTraversal(Node *root)
 {
     //  15 NULL 25 35 NULL 5 75 90 NULL
