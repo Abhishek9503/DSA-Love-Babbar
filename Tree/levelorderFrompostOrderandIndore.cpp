@@ -108,8 +108,7 @@ int main()
 
     cout << "Printing level order traversal " << endl;
 
-    levelOrderTraversal(root);
-    
+    levelOrderTraversal(root);    
 
     return 0;
 }
